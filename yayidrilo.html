@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: transparent;
+      overflow: hidden;
+    }
+
+    .neon-background {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: transparent;
+    }
+
+    .neon-background img {
+      max-width: 100%;
+      height: auto;
+      filter:
+        drop-shadow(0 0 10px #00fff7)
+        drop-shadow(0 0 20px #00fff7)
+        drop-shadow(0 0 30px #00fff7);
+      animation: flicker 1.5s infinite;
+    }
+
+    @keyframes flicker {
+      0%, 100% {
+        opacity: 1;
+      }
+      45% {
+        opacity: 0.7;
+      }
+      50% {
+        opacity: 0.4;
+      }
+      55% {
+        opacity: 0.7;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="neon-background">
+    <img src="https://i.imgur.com/pdNm3nL.png" alt="Neon Image">
+  </div>
+</body>
+</html>
